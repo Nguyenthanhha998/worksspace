@@ -1,32 +1,41 @@
 :root {
-    --white-color: #fff;
-    --back-color: #000;
-    --text-color: #333;
-    --Primary-color: #f9f9f9;
+  --white-color: #fff;
+  --back-color: #000;
+  --text-color: #333;
+  --Primary-color: #f9f9f9;
 }
 
 * {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 html {
-    font-size: 62.5%;
-    line-height: 1.5rem;
-    font-family: "Roboto", sans-serif;
-    box-sizing: border-box;
+  font-size: 62.5%;
+  line-height: 1.5rem;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
 }
 
 .grid {
-    width: 1200px;
-    max-width: 100%;
-    margin: 0 auto;
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 .grid__full-width {
-    width: 100%;
+  width: 100%;
 }
 
 .grid__row {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid__column-3 {
+  display: grid;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  justify-content: center;
+  /* margin: 40px auto; */
 }
